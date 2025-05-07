@@ -1,7 +1,10 @@
 const Player = require('../models/Player');
 const { getConversionRate } = require('../utils/convertCurrency');
 const Transaction = require('../models/Transactions');
+const crypto = require('crypto'); 
 
+
+// api to get player account having correct playerID 
 exports.getPlayer = async (req, res) => {
   const { playerId } = req.params;
   try {
@@ -16,6 +19,7 @@ exports.getPlayer = async (req, res) => {
   }
 };
 
+// api to ctreate player 
 exports.createPlayer = async (req, res) => {
   const { playerId } = req.body;
   try {
@@ -33,7 +37,7 @@ exports.createPlayer = async (req, res) => {
   }
 };
 
-
+// api to fetch user balanche in dollar 
 exports.getWalletBalance = async (req, res) => {
     const { playerId } = req.params;
     try {
@@ -47,10 +51,7 @@ exports.getWalletBalance = async (req, res) => {
     }
   };
 
-
-
-  const crypto = require('crypto'); 
-  
+// api to handle transaction increment and deduction in player account   
   exports.handleCashout = async (req, res) => {
     console.log("dekha");
     const { playerId, amount, cryType, multiplier, didCashOut } = req.body;
