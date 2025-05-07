@@ -2,15 +2,19 @@
 1. Clone the repo: git clone https://github.com/kush54/Assignment1
 
 2. Frontend Setup
- cd frontend 
- npm i 
+ cd frontend ,
+ npm i ,
  npm start
 
 3. Backend Setup
-cd backend
-nodemon index.js
-create a database in mongodbCompass and replace its name with crashGame in this connection string  || create a database in mongodbCompass with name crashGame
-mongoose.connect('mongodb://localhost:27017/crashGame')
+cd backend,
+nodemon index.js,
+
+
+4. create a database in mongodbCompass and replace its name with crashGame in this connection string (mongoose.connect('mongodb://localhost:27017/crashGame')) .
+    || (or)    create a database in mongodbCompass with name crashGame
+
+
 
 
 Next Step : 
