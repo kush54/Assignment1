@@ -1,0 +1,207 @@
+/* Game.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://images.unsplash.com/photo-1603201667140-b6ec3fca3c2d') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+.game-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00ffcc;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #00ffc3, #0099ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.multiplier-display {
+  font-size: 2rem;
+  color: #00ffcc;
+  font-weight: bold;
+  animation: pulse 1s infinite;
+}
+
+.timer {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.crash-info {
+  font-size: 1.1rem;
+  color: #ff4f4f;
+  margin: 10px 0;
+}
+
+.in-game-msg {
+  color: #00ff99;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cashout-button {
+  background: #ff0066;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.cashout-button:hover {
+  background: #cc0052;
+}
+
+.bet-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bet-form label {
+  font-size: 1rem;
+  text-align: left;
+}
+
+.bet-form input,
+.bet-form select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  background-color: #111;
+  color: #fff;
+}
+
+.bet-form button {
+  background: #00ccff;
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.bet-form button:hover {
+  background: #0088cc;
+}
+
+.waiting-round {
+  font-size: 1.5rem;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.round-info {
+  margin-top: 20px;
+}
+
+.rm {
+  color: #66ffcc;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.disabled-button {
+  background-color: grey;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
+.start-page.enhanced {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-card {
+  background: #ffffff;
+  padding: 3rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2a2a2a;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 1.5rem;
+  transition: 0.3s ease;
+}
+
+.input:focus {
+  border-color: #2a5298;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.2);
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #2a5298;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #1e3c72;
+}
+
